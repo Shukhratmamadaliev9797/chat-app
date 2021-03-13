@@ -1,3 +1,5 @@
+// chat side
+
 .ce {
   &-chat-list {
     background-color: $color-grey-light !important;
@@ -348,18 +350,10 @@
 .wrapper {
   height: 100vh;
   width: 100%;
-  background: rgb(117, 84, 160);
-  background: linear-gradient(
-    90deg,
-    rgba(117, 84, 160, 1) 7%,
-    rgba(117, 84, 160, 1) 17%,
-    rgba(106, 95, 168, 1) 29%,
-    rgba(99, 103, 174, 1) 44%,
-    rgba(87, 116, 184, 1) 66%,
-    rgba(70, 135, 198, 1) 83%,
-    rgba(44, 163, 219, 1) 96%,
-    rgba(22, 188, 237, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
+  background-image: linear-gradient(
+    110.1deg,
+    rgba(34, 126, 34, 1) 2.9%,
+    rgba(168, 251, 60, 1) 90.3%
   );
   display: flex;
   justify-content: center;
@@ -368,9 +362,9 @@
 
 .input {
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 0.2rem;
   background-color: rgb(255, 255, 255);
   border: none;
@@ -380,6 +374,12 @@
   transition: all 0.3s;
   outline: none;
   margin-bottom: 25px;
+  border: 1px solid $color-grey-light1;
+  transition: all 0.5s;
+
+  &:focus {
+    border-color: $color-primary-dark;
+  }
 }
 
 .form {
@@ -391,7 +391,7 @@
   color: white;
   margin-bottom: 30px;
   width: 100%;
-  font-size: 2.3em;
+  font-size: 2em;
 }
 
 .button {
@@ -402,11 +402,11 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 22px;
-  padding: 20px;
+  padding: 10px;
   width: 200px;
   transition: all 0.4s;
   cursor: pointer;
-  margin: 5px;
+  margin-left: 20px;
   width: 90%;
 }
 .button span {
